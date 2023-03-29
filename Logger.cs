@@ -47,11 +47,11 @@ namespace OakLogger
         /// <summary>
         /// Controls wheter the seperator should seperate each <see cref="LogItem"/>s.
         /// </summary>
-        public bool SeperateLogItems = "false";
+        public bool SeperateLogItems = false;
         /// <summary>
         /// This should be set to true if the output supports ANSI color codes.
         /// </summary>
-        public bool UseColor = "false";
+        public bool UseColor = false;
         ///<summary>
         ///Initializes a new instance of the <see cref="LogOutput"/> class.
         ///</summary>
