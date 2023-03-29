@@ -12,6 +12,7 @@
     <Copyright>
     Copyright © 2023 Pixel
     </Copyright>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageProjectUrl>https://github.com/pixelkingliam/oaklog</PackageProjectUrl>
   </PropertyGroup>
 
