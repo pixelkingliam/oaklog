@@ -27,7 +27,10 @@ Example of a csproj project with a reference to a local dll of OakLog
 
 </Project>
 ```
+## Nuget Package (Recommended)
+Run `dotnet add package Pixel.OakLog`.
 
+ see [Pixel.Oaklog on nuget.org](https://www.nuget.org/packages/Pixel.OakLog) for other methods of installation.
 # Usage
 
 ## Basic usage
