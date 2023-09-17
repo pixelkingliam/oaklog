@@ -1,13 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
+    <TargetFramework>net6.0</TargetFramework> <!-- Will update to .NET 8-->
+    <ImplicitUsings>enable</ImplicitUsings> 
     <Nullable>disable</Nullable>
     <OutputType>library</OutputType>
     <PackageId>Pixel.OakLog</PackageId>
-    <PackageVersion>1.0.0</PackageVersion>
-    <Description>Simple to setup logger library for C# programs.</Description>
+    <PackageVersion>1.1.0</PackageVersion>
+    <Description>Customizable logging library for C# programs.</Description>
     <Authors>Pixel</Authors>
     <Copyright>
     Copyright © 2023 Pixel
