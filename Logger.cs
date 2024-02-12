@@ -182,7 +182,7 @@ public class OLog
         {
             WriteColor(output, Color);
         }
-        output.Write(String.Format("[{0}]", LogType));
+        output.Write("[{0}]", LogType);
         if (useColor)
         {
             output.Write("\x1b[0m");
@@ -197,8 +197,8 @@ public class OLog
             WriteColor(output, Color);
         }
         double seconds;
-        seconds = Math.Round((double)DateTime.Now.Subtract(Process.GetCurrentProcess().StartTime).Milliseconds / 1000d, 2);
-        output.Write(String.Format("[{0}s]", seconds));
+        seconds = Math.Round((double)DateTime.Now.Subtract(Process.GetCurrentProcess().StartTime).TotalMilliseconds / 1000d, 2);
+        output.Write("[{0}s]", seconds);
         if (useColor)
         {
             output.Write("\x1b[0m");
@@ -211,7 +211,7 @@ public class OLog
             WriteColor(output, Color);
         }
         string time = DateTime.Now.ToString("yyyy/MM/dd HH:mm");
-        output.Write(String.Format("[{0}]", time));
+        output.Write("[{0}]", time);
         if (useColor)
         {
             output.Write("\x1b[0m");
@@ -224,7 +224,7 @@ public class OLog
             WriteColor(output, Color);
         }
         string stackframe = (new StackTrace()).ToString().Split("at ").Skip(4).ToArray<string>()[0];
-        output.Write(String.Format("[{0}]", stackframe.Replace('\n', ' ').Trim()));
+        output.Write("[{0}]", stackframe.Replace('\n', ' ').Trim());
         if (useColor)
         {
             output.Write("\x1b[0m");
@@ -236,7 +236,7 @@ public class OLog
         {
             WriteColor(output, Color);
         }
-        output.Write(String.Format("[#{0}]", Thread.CurrentThread.ManagedThreadId));
+        output.Write("[#{0}]", Thread.CurrentThread.ManagedThreadId);
         if (useColor)
         {
             output.Write("\x1b[0m");
@@ -248,7 +248,7 @@ public class OLog
         {
 
             var Tcolor = ((int, int, int))color;
-            output.Write(String.Format("\x1b[48;2;{0};{1};{2}m", Tcolor.Item1, Tcolor.Item2, Tcolor.Item3));
+            output.Write("\x1b[48;2;{0};{1};{2}m", Tcolor.Item1, Tcolor.Item2, Tcolor.Item3);
 
 
         }
